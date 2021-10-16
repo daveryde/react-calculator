@@ -30,7 +30,7 @@ export const clickNumber = (number, previousState) => {
 
 export const clickOperation = (operation, previousState) => {
     return {
-        ...previousState,
+        input: "",
         memory: previousState.input,
         operation,
     };
@@ -41,8 +41,8 @@ export const clickPercentage = (previousState) => {
 
     return {
         input: result,
-        memory: result,
-        operation: null,
+        memory: initialState.memory,
+        operation: initialState.operation,
     };
 }
 
@@ -79,8 +79,8 @@ export const clickEqual = (previousState) => {
 
     return {
         input: result,
-        memory: result,
-        operation: null,
+        memory: initialState.memory,
+        operation: initialState.operation,
     };
 }
 

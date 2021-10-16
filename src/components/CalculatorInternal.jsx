@@ -57,7 +57,7 @@ const CalculatorInternal = ({
     handleEqual
 }) => (
     <CalculatorBody>
-        <CalculatorScreen value={entry.input} />
+        <CalculatorScreen value={`${entry.memory !== "0" ? entry.memory : ""} ${entry.operation !== null ? entry.operation : ""} ${entry.input === "" ? "0" : entry.input} `} />
         <Button
             bgColor={buttonColors.white}
             value={operationKeys.C}
