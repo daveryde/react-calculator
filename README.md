@@ -8,17 +8,17 @@
     The minimum requirements for the calculator are listed as follows:
   </p>
 
-  - Support for basic operators (Addition, Subtraction, Multiplication, and Division)
-  - Support decimal arithmetic
-  - Be composed of at least 3 distinct React components
-  - Cannot use built-in Javascript functions like <code>eval()</code> that would oversimplify the solution
+  - [x] Support for basic operators (Addition, Subtraction, Multiplication, and Division)
+  - [x] Support decimal arithmetic
+  - [x] Be composed of at least 3 distinct React components
+  - [x] Cannot use built-in Javascript functions like <code>eval()</code> that would oversimplify the solution
 
   <p>Additional ideas to implement include, but are not limited to:</p>
 
-  - Supporting additional functions (Square root, exponents, factorial, etc).
-  - Supporting PEMDAS for equations with more than two operands.
-  - Comprehensive edge case handling for potential user inputs
-  - A strong, object-oriented, React component design that makes the
+  - [] Supporting additional functions (Square root, exponents, factorial, etc).
+  - [] Supporting PEMDAS for equations with more than two operands.
+  - [] Comprehensive edge case handling for potential user inputs
+  - [] A strong, object-oriented, React component design that makes the
 logical flow of your coding implementation clear and easy to follow
 
 <!-- ABOUT THE PROJECT -->
