@@ -10,6 +10,7 @@ import {
     clickNumber,
     clickOperation,
     clickPercentage,
+    clickSquared,
     initialState
 } from '../actions/operations';
 
@@ -45,6 +46,10 @@ const Calculator = () => {
         setEntry(clickPercentage);
     }
 
+    const handleSquared = () => {
+        setEntry(clickSquared);
+    }
+
     const handleEqual = () => {
         setEntry(clickEqual);
     }
@@ -57,6 +62,7 @@ const Calculator = () => {
                 handleClearAll={handleClearAll}
                 handleOperation={handleOperation}
                 handlePercentage={handlePercentage}
+                handleSquared={handleSquared}
                 handleEqual={handleEqual}
             />
         </CalculatorWrapper>

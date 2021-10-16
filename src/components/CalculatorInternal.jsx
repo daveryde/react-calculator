@@ -35,7 +35,7 @@ const Button = styled.button.attrs(props => ({
 `;
 
 const BigButton = styled.button`
-    grid-area: 5 / 5 / 7 / 4;
+    grid-area: 6 / 5 / 8 / 4;
     background: linear-gradient(to bottom, ${buttonColors.deeppink}, ${buttonColors.crimson});
     border-style: none;
     border-radius: 25px;
@@ -54,6 +54,7 @@ const CalculatorInternal = ({
     handleClearAll,
     handleOperation,
     handlePercentage,
+    handleSquared,
     handleEqual
 }) => (
     <CalculatorBody>
@@ -72,10 +73,19 @@ const CalculatorInternal = ({
         </Button>
         <Button
             bgColor={buttonColors.orange}
+            value={operationKeys.SQUARE}
+            onClick={handleSquared}>
+            {operationKeys.SQUARE}
+        </Button>
+        <Button
+            bgColor={buttonColors.orange}
             value={operationKeys.DIVIDE}
             onClick={(e) => handleOperation(e.target.value)}>
             {operationKeys.DIVIDE}
         </Button>
+        <Button bgColor={buttonColors.orange} />
+        <Button bgColor={buttonColors.orange} />
+        <Button bgColor={buttonColors.orange} />
         <Button
             bgColor={buttonColors.orange}
             value={operationKeys.MULTIPLY}

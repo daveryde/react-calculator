@@ -46,6 +46,16 @@ export const clickPercentage = (previousState) => {
     };
 }
 
+export const clickSquared = (previousState) => {
+    const result = String(parseFloat(previousState.input) * parseFloat(previousState.input));
+
+    return {
+        input: result,
+        memory: initialState.memory,
+        operation: initialState.operation,
+    };
+}
+
 const calculate = (previousState) => {
     const { input, memory, operation } = previousState;
 
@@ -87,6 +97,7 @@ export const clickEqual = (previousState) => {
 export const operationKeys = {
     C: "C",
     PERCENT: "%",
+    SQUARE: "^",
     MULTIPLY: "x",
     DIVIDE: "/",
     ADD: "+",
