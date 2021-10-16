@@ -29,6 +29,16 @@ export const clickNumber = (number, previousState) => {
 }
 
 export const clickOperation = (operation, previousState) => {
+    if (parseInt(previousState.memory) > 0) {
+        const result = calculate(previousState);
+
+        return {
+            input: initialState.input,
+            memory: result,
+            operation
+        }
+    }
+
     return {
         input: "",
         memory: previousState.input,
