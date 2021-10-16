@@ -15,10 +15,10 @@
 
   <p>Additional ideas to implement include, but are not limited to:</p>
 
-  - [] Supporting additional functions (Square root, exponents, factorial, etc).
-  - [] Supporting PEMDAS for equations with more than two operands.
-  - [] Comprehensive edge case handling for potential user inputs
-  - [] A strong, object-oriented, React component design that makes the
+  - [ ] Supporting additional functions (Square root, exponents, factorial, etc).
+  - [ ] Supporting PEMDAS for equations with more than two operands.
+  - [ ] Comprehensive edge case handling for potential user inputs
+  - [ ] A strong, object-oriented, React component design that makes the
 logical flow of your coding implementation clear and easy to follow
 
 <!-- ABOUT THE PROJECT -->
