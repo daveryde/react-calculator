@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# GoSchoolBox Technical Exercise (React)
+<p>
+  <p>
+    For this task, a fully functional calculator was built in React JS.
+  </p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <p>
+    The minimum requirements for the calculator are listed as follows:
+  </p>
 
-## Available Scripts
+  - Support for basic operators (Addition, Subtraction, Multiplication, and Division)
+  - Support decimal arithmetic
+  - Be composed of at least 3 distinct React components
+  - Cannot use built-in Javascript functions like <code>eval()</code> that would oversimplify the solution
 
-In the project directory, you can run:
+  <p>Additional ideas to implement include, but are not limited to:</p>
 
-### `npm start`
+  - Supporting additional functions (Square root, exponents, factorial, etc).
+  - Supporting PEMDAS for equations with more than two operands.
+  - Comprehensive edge case handling for potential user inputs
+  - A strong, object-oriented, React component design that makes the
+logical flow of your coding implementation clear and easy to follow
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Specification
 
-### `npm test`
+1. The calculator should be intuitive to use.
+2. React component state should be properly updated according to best practices.
+3. Arithmetic updates should be handled in a way such taht someone reviewing the implementation
+ for the first time can quickly understand the gist of the implementation.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshots
 
-### `npm run build`
+![Product Screen Shot - original][product-screenshot-original]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Product Screen Shot - expanded][product-screenshot-expanded]
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Notes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Enum mappings for colors are provided in src/components/CalculatorInternal.jsx.
+- The styled-components library is included in the package.json file.
+- UI inspiration [product-ui-mock]
+<br />
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<!-- GETTING STARTED -->
+## Getting Started
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To get a local copy up and running follow these steps.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Installation
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Clone the repo
+```sh
+git clone https://github.com/daveryde/react-calculator.git
+```
+2. In the root directory of the repo, install NPM packages
+```sh
+npm install
+```
+3. In the project directory, you can run:
+```sh
+npm start
+```
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- MARKDOWN LINKS & IMAGES -->
+[product-screenshot-original]: public/original.png
+[product-screenshot-expanded]: public/expanded.png
+[product-ui-mock]: https://www.uplabs.com/posts/calculator-animation-icons
