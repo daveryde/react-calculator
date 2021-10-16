@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import CalculatorInternal from './CalculatorInternal';
 
@@ -29,10 +29,6 @@ const CalculatorWrapper = styled.div`
 
 const Calculator = () => {
     const [entry, setEntry] = useState(initialState);
-
-    useEffect(() => {
-        console.log("useEffect ENTRY: ", entry)
-    }, [entry])
 
     const handleNumberClick = (value) => {
         setEntry(clickNumber(value, entry));
