@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import {
     clickAllClear,
     clickEqual,
+    clickInverse,
     clickNumber,
     clickOperation,
     clickPercentage,
@@ -50,6 +51,10 @@ const Calculator = () => {
         setEntry(clickSquared);
     }
 
+    const handleInverse = () => {
+        setEntry(clickInverse, entry);
+    }
+
     const handleEqual = () => {
         setEntry(clickEqual);
     }
@@ -63,6 +68,7 @@ const Calculator = () => {
                 handleOperation={handleOperation}
                 handlePercentage={handlePercentage}
                 handleSquared={handleSquared}
+                handleInverse={handleInverse}
                 handleEqual={handleEqual}
             />
         </CalculatorWrapper>

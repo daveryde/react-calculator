@@ -55,6 +55,7 @@ const CalculatorInternal = ({
     handleOperation,
     handlePercentage,
     handleSquared,
+    handleInverse,
     handleEqual
 }) => (
     <CalculatorBody>
@@ -156,7 +157,12 @@ const CalculatorInternal = ({
             {operationKeys.EQUAL}
         </BigButton>
 
-        <Button />
+        <Button
+            value={operationKeys.INVERSE}
+            onClick={() => handleInverse()}
+        >
+            {operationKeys.INVERSE}
+        </Button>
         <Button
             value={operationKeys.DECIMAL}
             onClick={(e) => handleNumberClick(e.target.value)}>

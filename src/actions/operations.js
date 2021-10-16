@@ -29,7 +29,7 @@ export const clickNumber = (number, previousState) => {
 }
 
 export const clickOperation = (operation, previousState) => {
-    if (parseInt(previousState.memory) > 0) {
+    if (parseFloat(previousState.memory) > 0) {
         const result = calculate(previousState);
 
         return {
@@ -63,6 +63,16 @@ export const clickSquared = (previousState) => {
         input: result,
         memory: initialState.memory,
         operation: initialState.operation,
+    };
+}
+
+export const clickInverse = (previousState) => {
+    const { input } = previousState;
+    const inverse = Math.sign(input) ? -Math.abs(input) : Math.abs(input);
+    
+    return {
+        ...previousState,
+        input: inverse
     };
 }
 
@@ -123,5 +133,6 @@ export const operationKeys = {
     SEVEN: "7",
     EIGHT: "8",
     NINE: "9",
-    ZERO: "0"
+    ZERO: "0",
+    INVERSE: "-/+"
 }
